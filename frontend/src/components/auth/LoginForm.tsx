@@ -146,7 +146,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSwitchToSignup }) => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = authAPI.googleAuth();
+    toast.error('Google OAuth is not configured yet. Please use email/password login.');
   };
 
   return (
